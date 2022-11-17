@@ -1,0 +1,25 @@
+{
+    "name": "employeesapps",
+    "version": "0.0.1",
+    "description": "A Fiori application for Employees List",
+    "keywords": [
+        "ui5",
+        "openui5",
+        "sapui5"
+    ],
+    "main": "webapp/index.html",
+    "dependencies": {},
+    "devDependencies": {
+        "@ui5/cli": "^2.14.1",
+        "@sap/ux-ui5-tooling": "1"
+    },
+    "ui5": {
+        "dependencies": [
+            "@sap/ux-ui5-tooling"
+        ]
+    },
+    "scripts": {
+        "start": "fiori run --open \"test/flpSandbox.html?sap-ui-xx-viewCache=false#comactetutemployeesapps-display\"",
+        "deploy-config": "npx -p @sap/ux-ui5-tooling fiori add deploy-config cf"
+    }
+}
